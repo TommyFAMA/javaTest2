@@ -26,6 +26,13 @@ public class MathTest {
         double d = m.divide(6,2);  //real number in java is not supported, real number calculation is not completed in the computer world
         assertEquals(3, d, 0.01);    //delta =0.01 (tolerance )
     }
+
+    @Test
+    public void testDivideByZero() {
+        double d = m.divide(6,0);  //real number in java is not supported, real number calculation is not completed in the computer world
+        assertEquals(-999999999, d, 0.01);    //delta =0.01 (tolerance )
+    }
+
     @Test
     public void testMultiply() {
         assertEquals(6, m.multiply(3, 2));
@@ -35,4 +42,6 @@ public class MathTest {
         assertEquals(0, m.substract(3, 3));
         
     }
+
+
 }

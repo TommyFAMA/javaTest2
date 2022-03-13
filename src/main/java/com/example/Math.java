@@ -14,6 +14,10 @@ public class Math {
     }
 
     public double divide(int a, int b){
-        return a/b;
+        int c = 3; // dummy value
+        if(b != 0 && c==3){
+            return a/b;
+        }
+        return -999999999;
     }
 }
